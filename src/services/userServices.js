@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/";
+const API = "https://lifetrack-e2sm.onrender.com/";
 
 export const addUser = (user)=>{
   return axios.post(API,user);

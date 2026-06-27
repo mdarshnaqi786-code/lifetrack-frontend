@@ -35,7 +35,7 @@ function Login() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://lifetrack-e2sm.onrender.com/api/auth/login",
         {
           email: form.email,
           password: form.password,

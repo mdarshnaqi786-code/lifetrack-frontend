@@ -25,13 +25,13 @@ function Dashboard() {
       };
 
       const [todoRes, noteRes, expenseRes, healthRes] = await Promise.all([
-        axios.get("http://localhost:5000/api/todo", { headers }),
+        axios.get("https://lifetrack-e2sm.onrender.com/api/todo", { headers }),
 
-        axios.get("http://localhost:5000/api/notes", { headers }),
+        axios.get("https://lifetrack-e2sm.onrender.com/api/notes", { headers }),
 
-        axios.get("http://localhost:5000/api/expenses", { headers }),
+        axios.get("https://lifetrack-e2sm.onrender.com/api/expenses", { headers }),
 
-        axios.get("http://localhost:5000/api/health", { headers }),
+        axios.get("https://lifetrack-e2sm.onrender.com/api/health", { headers }),
       ]);
 
       setTaskCount(todoRes.data.length);

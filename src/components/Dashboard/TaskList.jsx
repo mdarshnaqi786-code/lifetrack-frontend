@@ -13,7 +13,7 @@ function TaskList() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/todo",
+        "https://lifetrack-e2sm.onrender.com/api/todo",
         {
           headers: {
             Authorization: `Bearer ${token}`,

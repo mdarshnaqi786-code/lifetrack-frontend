@@ -35,7 +35,7 @@ function Todo() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/todo",
+        "https://lifetrack-e2sm.onrender.com/api/todo",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -86,7 +86,7 @@ function Todo() {
       if (editId) {
 
         await axios.put(
-          `http://localhost:5000/api/todo/${editId}`,
+          `https://lifetrack-e2sm.onrender.com/api/todo/${editId}`,
           form,
           {
             headers: {
@@ -100,7 +100,7 @@ function Todo() {
       } else {
 
         await axios.post(
-          "http://localhost:5000/api/todo",
+          "https://lifetrack-e2sm.onrender.com/api/todo",
           form,
           {
             headers: {
@@ -157,7 +157,7 @@ function Todo() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/todo/${id}`,
+        `https://lifetrack-e2sm.onrender.com/api/todo/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -182,7 +182,7 @@ function Todo() {
     try {
 
       await axios.patch(
-        `http://localhost:5000/api/todo/${id}/complete`,
+        `https://lifetrack-e2sm.onrender.com/api/todo/${id}/complete`,
         {},
         {
           headers: {

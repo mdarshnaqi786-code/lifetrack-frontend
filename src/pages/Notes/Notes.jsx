@@ -33,7 +33,7 @@ function Notes() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/notes",
+        "https://lifetrack-e2sm.onrender.com/api/notes",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -92,7 +92,7 @@ function Notes() {
       if (editId) {
 
         await axios.put(
-          `http://localhost:5000/api/notes/${editId}`,
+          `https://lifetrack-e2sm.onrender.com/api/notes/${editId}`,
           payload,
           {
             headers: {
@@ -106,7 +106,7 @@ function Notes() {
       } else {
 
         await axios.post(
-          "http://localhost:5000/api/notes",
+          "https://lifetrack-e2sm.onrender.com/api/notes",
           payload,
           {
             headers: {
@@ -157,7 +157,7 @@ function Notes() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/notes/${id}`,
+        `https://lifetrack-e2sm.onrender.com/api/notes/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
