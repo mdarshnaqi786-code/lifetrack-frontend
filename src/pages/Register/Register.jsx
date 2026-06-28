@@ -181,11 +181,6 @@ function Register() {
             </div>
 
             <div>
-              <label className="block mb-2 font-medium">
-                Confirm Password
-              </label>
-
-              <div>
 
   <label className="block mb-2 font-medium">
     Confirm Password
